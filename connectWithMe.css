@@ -118,6 +118,9 @@
   background-image: linear-gradient(to right,rgba(190,85,4),dimgray);
 }
 
+#cardColorDiv:hover {
+  cursor: pointer;
+}
 
 #viewResume {
   position: fixed;
