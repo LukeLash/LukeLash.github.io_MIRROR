@@ -1,6 +1,6 @@
 window.onload = () => {
 
-  var isMobile = /iPhone|Android/i.test(navigator.userAgent);
+  /*var isMobile = /iPhone|Android/i.test(navigator.userAgent);
     if (isMobile) {
       var element = document.getElementById('mobileDiv');
       document.getElementById("mobileDiv").style.pointerEvents = "all";
@@ -8,7 +8,7 @@ window.onload = () => {
       element.style.filter  = 'alpha(opacity=90)'; // IE fallback
       document.getElementById('decoBarVert').addEventListener('click', function() {location.href = 'index2.html'}, false);
     }
-    document.getElementById('decoBarVert').addEventListener('click', function() {location.href = 'index2.html'}, false);
+    document.getElementById('decoBarVert').addEventListener('click', function() {location.href = 'index2.html'}, false); */
   
   function noScroll() {
   window.scrollTo(0, 0);
