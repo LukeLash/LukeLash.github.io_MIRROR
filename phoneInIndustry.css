@@ -50,13 +50,24 @@
   align-self: center;
 
 }
+#firstIcon {
+  position: relative;
+  width: 100%;
+  flex-basis: auto;
+  text-align: center;
+  font-size: 15vw;
+  border: 1px solid white;
+}
+
 #row1R {
   position: relative;
   flex-basis: auto;
   width: 100%;
-
   display: flex;
   flex-direction: row;
+  box-shadow: inset 0 -3px 8px black;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 #IconRow1R {
   flex-basis: 00%;
