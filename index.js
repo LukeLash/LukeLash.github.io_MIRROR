@@ -6,6 +6,8 @@ window.onload = () => {
       document.getElementById("mobileDiv").style.pointerEvents = "all";
       element.style.opacity = "1";
       element.style.filter  = 'alpha(opacity=90)'; // IE fallback
+      window.open('index2.html', '_blank');
+    }
     }
   
   function noScroll() {
