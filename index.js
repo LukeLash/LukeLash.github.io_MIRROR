@@ -8,8 +8,7 @@ window.onload = () => {
       element.style.filter  = 'alpha(opacity=90)'; // IE fallback
       document.getElementById('decoBarVert').addEventListener('click', function() {location.href = 'index2.html'}, false);
     }
-    }
-    
+    document.getElementById('decoBarVert').addEventListener('click', function() {location.href = 'index2.html'}, false);
   
   function noScroll() {
   window.scrollTo(0, 0);
