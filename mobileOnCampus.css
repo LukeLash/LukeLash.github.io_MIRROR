@@ -12,8 +12,7 @@
   font-style: italic;
 }
 
-
-#rightSide {
+#pageDiv {
   position: absolute;
   max-width: 100%;
   top: 0%;
@@ -32,7 +31,7 @@
   overflow-x: hidden;
 }
 
-#rightSideBanner {
+#banner {
   position: relative;
   width: 100%;
   top: 0%;
@@ -46,126 +45,49 @@
   padding-top: .5vh;
   padding-bottom: 1.3vh; /*Make sure that padding-bottom is always .8vh greater than padding-top*/
 }
-#containerR {
-  align-self: center;
 
+#titleContainer {
+  align-self: center;
 }
-#firstIcon {
+
+#firstIcon,#secondIcon,#thirdIcon,#fourthIcon {
   position: relative;
   width: 100%;
   flex-basis: auto;
   text-align: center;
   font-size: 15vw;
+  padding-top: 1vh;
+  padding-bottom: 0vh;
+}
+
+#firstIcon,#thirdIcon {
+  /*background-color:*/
+}
+
+#secondIcon,#fourthIcon {
+  background-color: #13294b;
+}
+
+#row1,#row2,#row3,#row4 {
+  position: relative;
+  flex-basis: auto;
+  width: 94vw;
+  max-width: 100vw;
+  font-size: 2vw;
+  font-family: "Ebrima",sans-serif;
+  display: flex;
+  flex-direction: row;
+  /*box-shadow: inset 0 -3px 8px black;*/
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+}
+
+#row1,#row3 {
+  /*background-color:*/
+}
+
+#row2,#row4 {
+  background-color: #13294b;
   border: 1px solid white;
-}
-
-#row1R {
-  position: relative;
-  flex-basis: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  box-shadow: inset 0 -3px 8px black;
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-#IconRow1R {
-  flex-basis: 00%;
-  max-width: 20%;
-  height: auto;
-
-
-  align-items: center;
-  color: GhostWhite;
-
-}
-#IconR1 {
-  position: relative;
-  left: 12%;
-  top: 20%;
-}
-#image1R {
-  transform: scale(.3,.3);
-}
-
-#WordsRow1R {
-  flex-basis: 100%;
-  font-family: "Ebrima";
-  padding-left: 19px;
-  padding-right: 19px;
-}
-
-
-#row2R {
-  position: relative;
-  flex-basis: auto;
-  width: 100%;
-
-
-  display: flex;
-  flex-direction: row;
-}
-
-#IconRow2R {
-  flex-basis: 0%;
-  max-width: 20%;
-  height: auto;
-
-
-  align-items: center;
-  color: GhostWhite;
-
-}
-#IconR2 {
-  position: relative;
-  left: 12%;
-  top: 20%;
-}
-#image2R {
-  transform: scale(.3,.3);
-}
-
-#WordsRow2R {
-  flex-basis: 100%;
-
-  font-family: "Ebrima";
-  padding-left: 19px;
-  padding-right: 19px;
-}
-
-#row3R,#row4R {
-  position: relative;
-  flex-basis: auto;
-  width: 100%;
-
-
-  display: flex;
-  flex-direction: row;
-}
-
-#IconRow3R,#IconRow4R {
-  flex-basis: 20%;
-  max-width: 20%;
-  height: auto;
-
-
-  align-items: center;
-  color: GhostWhite;
-
-}
-#IconR3,#IconR4 {
-  position: relative;
-  left: 23%;
-  top: 20%;
-}
-#image3R,#image4R {
-  transform: scale(.3,.3);
-}
-
-#WordsRow3R,#WordsRow4R {
-  flex-basis: 80%;
-
-  font-family: "Ebrima";
-  padding-left: 19px;
-  padding-right: 19px;
 }
