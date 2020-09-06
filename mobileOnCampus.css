@@ -1,6 +1,13 @@
 #inIndustryBackground {
   margin: 0px;
   padding: 0px;
+  background-color: gray;
+}
+
+#helper{
+  position: relative;
+  width: 100%;
+  height: 5%;
 }
 
 .bold {
@@ -19,10 +26,8 @@
   width: 100%;
   height: fit-content;
   font-size: 3.4vw;
-  background-color: gray;
   display: flex;
   flex-direction: column;
-  /*height: fit-content;*/
   color: gainsboro;
   padding: 0px;
   margin: 0px;
@@ -42,7 +47,7 @@
   display: flex;
   flex-direction: column;
   padding-top: .5vh;
-  padding-bottom: 1.3vh; /*Make sure that padding-bottom is always .8vh greater than padding-top*/
+  padding-bottom: 1.3vh;
 }
 
 #titleContainer {
@@ -60,14 +65,17 @@
 }
 
 #firstIcon,#thirdIcon {
-  /*background-color:*/
+  background-color: gray;
 }
 #thirdIcon {
   padding-top: 1.3vh;
+
 }
 
 #secondIcon,#fourthIcon {
   background-color: #13294b;
+  border: 1px solid #13294b;
+  
 }
 
 #row1,#row2,#row3,#row4 {
@@ -83,10 +91,11 @@
   padding-left: 3vw;
   padding-right: 3vw;
   padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 #row1,#row3 {
-  /*background-color:*/
+background-color: gray;
 }
 
 #row2,#row4 {
