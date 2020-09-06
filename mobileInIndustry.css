@@ -1,0 +1,171 @@
+#inIndustryBackground {
+  background-color: #f3f3f3;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 4vw;
+}
+.italics {
+  font-style: italic;
+}
+
+
+#rightSide {
+  position: absolute;
+  max-width: 100%;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: fit-content;
+  font-size: 3.4vw;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  /*height: fit-content;*/
+  color: gainsboro;
+  padding: 0px;
+  margin: 0px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#rightSideBanner {
+  position: relative;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  background-color: #13294b;
+  color: GhostWhite;
+  font-size: 5vw;
+  font-family: "Ebrima";
+  display: flex;
+  flex-direction: column;
+  padding-top: .5vh;
+  padding-bottom: 1.3vh; /*Make sure that padding-bottom is always .8vh greater than padding-top*/
+}
+#containerR {
+  align-self: center;
+
+}
+#firstIcon {
+  position: relative;
+  width: 100%;
+  flex-basis: auto;
+  text-align: center;
+  font-size: 15vw;
+  border: 1px solid white;
+}
+
+#row1R {
+  position: relative;
+  flex-basis: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: inset 0 -3px 8px black;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+#IconRow1R {
+  flex-basis: 00%;
+  max-width: 20%;
+  height: auto;
+
+
+  align-items: center;
+  color: GhostWhite;
+
+}
+#IconR1 {
+  position: relative;
+  left: 12%;
+  top: 20%;
+}
+#image1R {
+  transform: scale(.3,.3);
+}
+
+#WordsRow1R {
+  flex-basis: 100%;
+  font-family: "Ebrima";
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+
+#row2R {
+  position: relative;
+  flex-basis: auto;
+  width: 100%;
+
+
+  display: flex;
+  flex-direction: row;
+}
+
+#IconRow2R {
+  flex-basis: 0%;
+  max-width: 20%;
+  height: auto;
+
+
+  align-items: center;
+  color: GhostWhite;
+
+}
+#IconR2 {
+  position: relative;
+  left: 12%;
+  top: 20%;
+}
+#image2R {
+  transform: scale(.3,.3);
+}
+
+#WordsRow2R {
+  flex-basis: 100%;
+
+  font-family: "Ebrima";
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+#row3R,#row4R {
+  position: relative;
+  flex-basis: auto;
+  width: 100%;
+
+
+  display: flex;
+  flex-direction: row;
+}
+
+#IconRow3R,#IconRow4R {
+  flex-basis: 20%;
+  max-width: 20%;
+  height: auto;
+
+
+  align-items: center;
+  color: GhostWhite;
+
+}
+#IconR3,#IconR4 {
+  position: relative;
+  left: 23%;
+  top: 20%;
+}
+#image3R,#image4R {
+  transform: scale(.3,.3);
+}
+
+#WordsRow3R,#WordsRow4R {
+  flex-basis: 80%;
+
+  font-family: "Ebrima";
+  padding-left: 19px;
+  padding-right: 19px;
+}
