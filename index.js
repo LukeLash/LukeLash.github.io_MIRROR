@@ -35,7 +35,6 @@ window.removeEventListener('scroll', noScroll);*/
 
 // Contact Button
   document.getElementById('Button4').addEventListener('click', function() {location.href = 'ConnectWithMe.html'}, false);
-//  document.getElementById('colorBarDiv').addEventListener('click', function() {location.href = 'phoneLanding.html'}, false);
 
 
 }
