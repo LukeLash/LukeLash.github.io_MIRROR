@@ -26,6 +26,5 @@ window.onload = () => {
     // Contact Button
       document.getElementById('Button4').addEventListener('click', function() {location.href = 'ConnectWithMe.html'}, false);
   
-  // document.getElementById('cardColorDiv').addEventListener('click', function() {location.href = 'phoneLanding.html'}, false);
 
 }
