@@ -21,7 +21,7 @@ window.addEventListener('scroll', noScroll);
 window.removeEventListener('scroll', noScroll);*/
 
 // On Campus Button
-  document.getElementById('Button1').addEventListener('click', function() {location.href = 'phoneLanding.html'}, false);
+  document.getElementById('Button1').addEventListener('click', function() {location.href = 'index.html'}, false);
 
 // In Industry Button
   document.getElementById('Button2').addEventListener('click', function() {location.href = 'OnCampus.html'}, false);
