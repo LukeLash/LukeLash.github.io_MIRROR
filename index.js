@@ -1,6 +1,6 @@
 window.onload = () => {
 
-  /*var isMobile = /iPhone|Android/i.test(navigator.userAgent);
+  var isMobile = /iPhone|Android/i.test(navigator.userAgent);
     if (isMobile) {
       var element = document.getElementById('mobileDiv');
       document.getElementById("mobileDiv").style.pointerEvents = "all";
