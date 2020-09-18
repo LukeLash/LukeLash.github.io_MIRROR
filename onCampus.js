@@ -17,7 +17,7 @@ window.onload = () => {
       document.getElementById('Button2').addEventListener('click', function() {location.href = 'OnCampus.html'}, false);
 
     // LinkedIn Button
-        document.getElementById("Button3").addEventListener("click", toLinkedIn);
+        document.getElementById('Button3').addEventListener("click", toLinkedIn);
 
         function toLinkedIn() {
           window.open('https://www.linkedin.com/in/lucas-lasher-21011914a/', '_blank');
