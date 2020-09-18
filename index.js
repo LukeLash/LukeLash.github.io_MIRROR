@@ -8,23 +8,21 @@ window.onload = () => {
       element.style.filter  = 'alpha(opacity=90)'; // IE fallback
     }
 
-// On Campus Button
-  document.getElementById('Button1').addEventListener('click', function() {location.href = 'index.html'}, false);
+    // On Campus Button
+      document.getElementById('Button1').addEventListener('click', function() {location.href = 'index.html'}, false);
 
-// In Industry Button
-  //document.getElementById('Button2').addEventListener('click', function() {location.href = 'OnCampus.html'}, false);
-  
-// LinkedIn Button
+    // In Industry Button
+      document.getElementById('Button2').addEventListener('click', function() {location.href = 'OnCampus.html'}, false);
 
+    // LinkedIn Button
+        document.getElementById("Button3").addEventListener("click", toLinkedIn);
 
-  document.getElementById("Button3").addEventListener("click", toLinkedIn);
+        function toLinkedIn() {
+          window.open('https://www.linkedin.com/in/lucas-lasher-21011914a/', '_blank');
+        }
 
-    function toLinkedIn() {
-      window.open('https://www.linkedin.com/in/lucas-lasher-21011914a/', '_blank');
-    }
-
-// Contact Button
-  document.getElementById('Button4').addEventListener('click', function() {location.href = 'ConnectWithMe.html'}, false);
+    // Contact Button
+      document.getElementById('Button4').addEventListener('click', function() {location.href = 'ConnectWithMe.html'}, false);
 
 
 }
