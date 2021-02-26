@@ -17,7 +17,21 @@ window.onload = () => {
       document.getElementById('Button2').addEventListener('click', function() {location.href = 'OnCampus.html'}, false);
 
     // LinkedIn Button
-        document.getElementById("Button3").addEventListener("click", toLinkedIn);
+      document.getElementById("Button3").addEventListener("mouseover", onLinkedIn);
+
+      function onLinkedIn() {
+                document.getElementById('Button3').innerHTML
+                    = 'Go to My LinkedIn';
+            }
+
+      document.getElementById("Button3").addEventListener("mouseout", offLinkedIn);
+
+        function offLinkedIn() {
+                  document.getElementById('Button3').innerHTML
+                      = 'LinkedIn';
+              }
+
+      document.getElementById("Button3").addEventListener("click", toLinkedIn);
 
         function toLinkedIn() {
           window.open('https://www.linkedin.com/in/lucas-lasher-21011914a/', '_blank');
@@ -25,6 +39,5 @@ window.onload = () => {
 
     // Contact Button
       document.getElementById('Button4').addEventListener('click', function() {location.href = 'ConnectWithMe.html'}, false);
-  
 
 }

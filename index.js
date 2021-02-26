@@ -1,3 +1,5 @@
+// https://www.w3docs.com/snippets/javascript/how-to-redirect-mobile-devices-with-javascript-and-css.html
+
 window.onload = () => {
 
   var isMobile = /iPhone|Android/i.test(navigator.userAgent);
@@ -60,6 +62,7 @@ var playTimDuration = 71.352 * 1000;
 function playTim() {
   if (!audio) {
     audio = new Audio('friday_night.mp3');
+    //audio.volume = 0.5; // you can control volume with number from 0 to 1. 1 is default
   }
   audio.loop = false;
   setTimeout(() => {  audio = false; }, playTimDuration);

@@ -42,19 +42,20 @@
   box-shadow: 0px 0px 8px 8px DarkGray;
   display: flex;
   flex-direction: column;
+  border-color: rgb(190,85,4);
 }
 
 #cardTopBorderDiv {
   flex-basis: 0.25vh;
   background-image: linear-gradient(to right,rgba(190,85,4),dimgray);
+
 }
 
 #cardContentDiv {
   display: flex;
   flex-direction: row;
   flex-basis: 92.5%;
-  background-color: Black;
-
+  background-color: rgb(8,8,8);
 }
 
 #cardContentDivLeft {
@@ -62,6 +63,7 @@
   border-left: 0.25vh solid rgba(190,85,4);
   display: flex;
   overflow: hidden;
+
 }
 
 #icon {
@@ -109,6 +111,15 @@
   color: rgba(190,85,4);
 }
 
+#hr {
+  height: 1.5px;
+  border-width: 0;
+  width: 85%;
+  background-image: linear-gradient(to right,dimgray,rgb(8,8,8));
+  /*background-image: linear-gradient(to right,rgba(190,85,4),dimgray);*/
+  margin-right: 100%;
+}
+
 #LLASHER2atILLINOISdotEDU {
   color: rgba(190,85,4);
 }
@@ -118,9 +129,6 @@
   background-image: linear-gradient(to right,rgba(190,85,4),dimgray);
 }
 
-#cardColorDiv:hover {
-  cursor: pointer;
-}
 
 #viewResume {
   position: fixed;
@@ -128,7 +136,6 @@
   margin:auto;
   width: 105vh;
   height: 60vh;
-
 }
 
 
