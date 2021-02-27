@@ -1,4 +1,4 @@
-#mobileDiv {
+/*#mobileDiv {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -10,7 +10,7 @@
   font-size: 28pt;
   pointer-events: none;
   background-color: white;
-}
+}*/
 #indexBackground {
   max-width: 100%;
   max-height: 100%;
