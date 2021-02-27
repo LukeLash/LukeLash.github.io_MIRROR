@@ -2,13 +2,18 @@
 
 window.onload = () => {
 
-  var isMobile = /iPhone|Android/i.test(navigator.userAgent);
-    if (isMobile) {
-      var element = document.getElementById('mobileDiv');
-      document.getElementById("mobileDiv").style.pointerEvents = "all";
-      element.style.opacity = "1";
-      element.style.filter  = 'alpha(opacity=90)'; // IE fallback
-    }
+if (typeof window.orientation !== "undefined") {
+  // this means the user is on a mobile device, so they need to be redirected to the mobile version of the site
+  window.location.replace("mobileIndex.html");
+}
+
+if (screen.width <= 699) {
+  document.location = "w3docs.com";
+}
+  function isMobileDevice() {
+      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  };*/
+
 
   var vertBool = "Did you click on the vertical blue bar?"
   var horizBool = "Did you click on the horizontal blue bar?";
@@ -78,7 +83,11 @@ window.onload = () => {
   document.getElementById("Button1").addEventListener('click', function() {location.href = 'index.html'}, false);
 
 // In Industry Button
-  document.getElementById("Button2").addEventListener('click', function() {location.href = 'campusAndIndustry.html'}, false);
+  //document.getElementById('Button2').addEventListener('click', function() {location.href = 'OnCampus.html'}, false);
+  document.getElementById("Button2").onclick = function() {myF()};
+  function myF() {
+    window.open('campusAndIndustry.html', '_blank');
+  }
 
 // LinkedIn Button
   document.getElementById("Button3").addEventListener("click", toLinkedIn);
