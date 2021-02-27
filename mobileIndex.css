@@ -1,0 +1,15 @@
+#icon {
+  position: fixed;
+  top: 20vh;
+  left: 20vw;
+
+  height: 30vh;
+  width: 80vw;
+
+}
+
+#message {
+  font-size: 36pt;
+
+  font-family: sans-serif;
+}
