@@ -10,6 +10,70 @@ window.onload = () => {
       element.style.filter  = 'alpha(opacity=90)'; // IE fallback
     }
 
+  var vertBool = "Did you click on the vertical blue bar?"
+  var horizBool = "Did you click on the horizontal blue bar?";
+  var suitBool = "Did you click on my suit?";
+  var secretArray = [vertBool, horizBool, suitBool];
+  var secretArrayNew = secretArray;
+
+// apologies to who might be reading this, the code below is so woefully unoptimized
+  document.getElementById("decoBarHoriz").addEventListener('click', function() {
+    secretArray = secretArray.filter(e => e !== horizBool);
+    if (secretArray.length == 0) {
+      alertAndReset();
+    } else {
+    document.getElementById('horizSecretMessage').style.opacity = 1;
+    var printedMessage = secretBoolCounter();
+    document.getElementById("horizSecretMessage").innerHTML = printedMessage;
+    document.getElementById('horizSecretMessage').style.backgroundColor = "#00ADB5";
+    }
+  });
+
+  document.getElementById("decoBarVert").addEventListener('click', function() {
+    secretArray = secretArray.filter(e => e !== vertBool);
+    if (secretArray.length == 0) {
+      alertAndReset();
+    } else {
+    document.getElementById('vertSecretMessage').style.opacity = 1;
+    var printedMessage = secretBoolCounter();
+    document.getElementById("vertSecretMessage").innerHTML = printedMessage;
+    }
+  });
+
+  document.getElementById("suitSecretMessageDiv").addEventListener('click', function() {
+    secretArray = secretArray.filter(e => e !== suitBool);
+    if (secretArray.length == 0) {
+      alertAndReset();
+    } else {
+    document.getElementById('suitSecretMessage').style.opacity = 1;
+    var printedMessage = secretBoolCounter();
+    document.getElementById("suitSecretMessage").innerHTML = printedMessage;
+    document.getElementById('suitSecretMessage').style.backgroundColor = "#00ADB5";
+    }
+  });
+
+  function secretBoolCounter() {
+    randomNum = Math.floor(Math.random() * secretArray.length);
+    return secretArray[randomNum];
+  }
+
+  function alertAndReset() {
+    alert("Did you click the three blue logos? And did you turn your sound on?");
+    secretArray = secretArrayNew;
+    document.getElementById('horizSecretMessage').style.opacity = 0;
+    document.getElementById('vertSecretMessage').style.opacity = 0;
+    document.getElementById('suitSecretMessage').style.opacity = 0;
+  }
+  /*  function isIE() {
+      return document.documentMode;
+    }
+
+    if (isIE()) {
+      alert("Internet Explorer");
+    } else {
+      alert("Not Internet Explorer");
+    } */
+
 // On Campus Button
   document.getElementById("Button1").addEventListener('click', function() {location.href = 'index.html'}, false);
 
@@ -17,7 +81,7 @@ window.onload = () => {
   //document.getElementById('Button2').addEventListener('click', function() {location.href = 'OnCampus.html'}, false);
   document.getElementById("Button2").onclick = function() {myF()};
   function myF() {
-    window.open('OnCampus.html', '_blank');
+    window.open('campusAndIndustry.html', '_blank');
   }
 
 // LinkedIn Button
@@ -28,7 +92,7 @@ window.onload = () => {
     }
 
 // Contact Button
-  document.getElementById("Button4").addEventListener('click', function() {location.href = 'ConnectWithMe.html'}, false);
+  document.getElementById("Button4").addEventListener('click', function() {location.href = 'connectWithMe.html'}, false);
 
 
 // Funny quotes playback (for those of you who scrolled down this far)

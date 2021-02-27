@@ -1,0 +1,378 @@
+#mobileDiv {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  opacity: 0;
+  text-align: center;
+  font-size: 28pt;
+  pointer-events: none;
+  background-color: white;
+}
+#indexBackground {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #222831;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+#decoBarVert {
+  position: fixed;
+  width: 1.5vw;
+  height: 55vh;
+  left: 1.3vw;
+  top: 1.3vw;
+  border-radius: 5px;
+  background-color: #00ADB5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+#vertSecretMessage {
+  transform: rotate(180deg);
+  opacity: 0;
+}
+
+#decoBarHoriz {
+  position: fixed;
+  width: 60vw;
+  height: 1.5vw;
+  left: 1.3vw;
+  top: 1.3vw;
+  border-radius: 5px;
+  background-color: #00ADB5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#horizSecretMessage {
+  opacity: 0;
+}
+
+#textDiv {
+  width: 60vw;
+  height: fit-content;
+  position: fixed;
+  left: 5vw;
+  top: 5vw;
+  border-radius: 20px;
+  background-color: #393E46;
+  font-family: "Ebrima";
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+}
+
+#meetLucas {
+  background-color: #393E46;
+  font-family: "Ebrima";
+  color: gainsboro;
+  font-size: 2vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  line-height:normal;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+}
+
+#justIm {
+  font-size: 70pt;
+}
+#atThe {
+  color: gainsboro;
+}
+#justLucasLasher {
+  color: #00ADB5;
+  font-size: 70pt;
+  font-family: "Ebrima";
+}
+
+#degrees {
+  font-size: 19pt;
+  font-family: "Ebrima";
+}
+#degreesHelper {
+  font-size: 15pt;
+  opacity: 0;
+}
+
+#imagesAndRoles {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+  background-color: white/*#393E46*/;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  font-size: 3vh;
+  font-family: sans-serif;
+}
+
+#columnA {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rowA1 {
+  flex-basis: 75%;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+}
+#rowA2 {
+  flex-basis: 25%;
+  padding-bottom: 2vh;
+
+}
+#icon1,#icon2,#icon3 {
+  font-size: 5vw;
+  color: #00ADB5;
+}
+
+#columnB {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#rowB1 {
+  flex-basis: 75%;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+
+}
+
+#rowB2 {
+  flex-basis: 25%;
+  padding-bottom: 2vh;
+}
+#columnC {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#rowC1 {
+  flex-basis: 75%;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+}
+
+#rowC2 {
+  flex-basis: 25%;
+  padding-bottom: 2vh;
+
+}
+/*
+#columnB {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rowB1 {
+  flex-basis: 75%;
+  border: 1px solid red;
+}
+
+#rowB2 {
+  flex-basis: 25%;
+  border: 1px solid red;
+}
+
+#columnC {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rowC1 {
+  flex-basis: 75%;
+  border: 1px solid red;
+}
+
+#rowC2 {
+  flex-basis: 25%;
+  border: 1px solid red;
+}
+*/
+.material-icons {
+  color: #00ADB5;
+  transform: scale(4.5,4.5);
+}
+
+#photoDiv {
+  width: 24vw;
+  height: 72vh;
+  position: fixed;
+  right: 5vw;
+  top: 2.5vw;
+  background: radial-gradient(#00ADB5,#222831);
+  margin: auto;
+  display: flex;
+}
+
+#suitSecretMessageDiv {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  color: black;
+}
+
+#suitSecretMessage {
+  position: absolute;
+  bottom: 10%;
+  margin: auto;
+  opacity: 0;
+  border-radius: 5px;
+}
+
+#headshotPic {
+  transform: scale(1,1);
+  margin: auto;  /* Magic! */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#indexBottomButtons { /* The sidebar containing work, campus experience and contacts */
+  width: 100vw;
+  height: 17.5vh;
+  position: fixed;
+  bottom: 0%;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+
+
+#Button1 { /* On Campus */
+  flex-basis: 25%;
+  border: 1px solid GhostWhite;
+  color: Gray;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  background-color: GhostWhite;
+  position: relative;
+  outline: none;
+
+}
+    #Button1:hover {
+      animation: tilty 3s /*infinite*/ ;
+      transition-duration: .3s;
+      background-color: #00ADB5;
+      color: White;
+      border: 1pt solid #00ADB5;
+      box-shadow: 0px -3px 2px 0px GhostWhite;
+      overflow: visible;
+      cursor: pointer;
+    }
+/*
+  @keyframes tilty {
+    0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+
+  }
+*/
+#Button2 { /* In Industry */
+  flex-basis: 25%;
+  border: 1px solid GhostWhite;
+  color: Gray;
+  font-family: sans-serif;
+  font-size: 1.5vw;
+  background-color: GhostWhite;
+  position: relative;
+  overflow: visible;
+  outline: none;
+  cursor: pointer;
+
+}
+      #Button2:hover {
+        transition-duration: .3s;
+        background-color: #00ADB5;
+        color: White;
+        border: 1pt solid #00ADB5;
+        box-shadow: 0px -3px 2px 0px GhostWhite;
+        overflow: visible;
+      }
+
+#Button3 { /* CAD Portfolio */
+  flex-basis: 25%;
+  border: 1px solid GhostWhite;
+  color: Gray;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  background-color: GhostWhite;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+      #Button3:hover {
+        transition-duration: .3s;
+        background-color: #00ADB5;
+        color: White;
+        border: 1pt solid #00ADB5;
+        box-shadow: 0px -3px 2px 0px GhostWhite;
+      }
+
+#Button4 { /* LinkedIn */
+  flex-basis: 25%;
+  border: 1px solid GhostWhite;
+  color: Gray;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  background-color: GhostWhite;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+      #Button4:hover {
+        transition-duration: .3s;
+        background-color: #00ADB5;
+        color: White;
+        border: 1pt solid #00ADB5;
+        box-shadow: 0px -3px 2px 0px GhostWhite;
+      }
+
+#Button5 { /* Email and Phone */
+  flex-basis: 25%;
+  border: 1px solid GhostWhite;
+  color: Gray;
+  font-size: 1.5vw;
+  background-color: GhostWhite;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+      #Button5:hover {
+        transition-duration: .3s;
+        background-color: #00ADB5;
+        color: White;
+        border: 1pt solid #00ADB5;
+        box-shadow: 0px -3px 2px 0px GhostWhite;
+      }

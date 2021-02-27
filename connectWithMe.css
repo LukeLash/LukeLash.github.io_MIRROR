@@ -1,10 +1,14 @@
 #ConnectWithMeBackground {
+  /*background-color: rgba(230,230,230);*/
   background-color: rgba(230,230,230);
+  background-image: url("LL_background.png");
+background-repeat: repeat;
   display: flex;
   justify-content: center;
   margin: 0px;
   padding: 0px;
 }
+
 /*
 #saber{
   position: fixed;
@@ -129,6 +133,24 @@
   background-image: linear-gradient(to right,rgba(190,85,4),dimgray);
 }
 
+#loveDiv {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: black;
+  font-family: "Segoe UI";
+  font-weight: normal;
+}
+#loveDiv:hover {
+  transition-duration: .3s;
+  opacity: 1;
+}
+
 
 #viewResume {
   position: fixed;
@@ -137,12 +159,6 @@
   width: 105vh;
   height: 60vh;
 }
-
-
-
-
-
-
 
 #indexBottomButtons { /* The sidebar containing work, campus experience and contacts */
   width: 100vw;
@@ -154,6 +170,7 @@
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
+  box-shadow: 0px -3px 10px 1px darkgray;
 }
 
 
@@ -171,10 +188,10 @@
     #Button1:hover {
       animation: tilty 3s /*infinite*/ ;
       transition-duration: .3s;
-      background-image: linear-gradient(to right,rgba(190,85,4),rgba(169,90,29));
+      background-color: rgb(180, 87, 16);
       color: White;
       border: none;
-      box-shadow: 0px -3px 2px 0px GhostWhite;
+      box-shadow: 0px -3px 2px 0px rgb(180, 87, 16);
       overflow: visible;
       cursor: pointer;
     }
@@ -186,7 +203,6 @@
       100% {
         transform: rotate(360deg);
       }
-
   }
 */
 #Button2 { /* In Industry */
@@ -204,10 +220,10 @@
 }
       #Button2:hover {
         transition-duration: .3s;
-        background-image: linear-gradient(to right,rgba(169,90,29),rgba(148,95,54));
+        background-color: rgb(180, 87, 16);
         color: White;
         border: none;
-        box-shadow: 0px -3px 2px 0px GhostWhite;
+        box-shadow: 0px -3px 2px 0px rgb(180, 87, 16);
         overflow: visible;
       }
 
@@ -223,10 +239,10 @@
 }
       #Button3:hover {
         transition-duration: .3s;
-        background-image: linear-gradient(to right,rgba(148,95,54),rgba(127,100,80));
+        background-color: rgb(180, 87, 16);
         color: White;
         border: none;
-        box-shadow: 0px -3px 2px 0px GhostWhite;
+        box-shadow: 0px -3px 2px 0px rgb(180, 87, 16);
       }
 
 #Button4 { /* LinkedIn */
@@ -242,8 +258,8 @@
 
       #Button4:hover {
         transition-duration: .3s;
-        background-image: linear-gradient(to right,rgba(127,100,80),dimgray);
+        background-color: rgb(180, 87, 16);
         color: White;
         border: none;
-        box-shadow: 0px -3px 2px 0px GhostWhite;
+        box-shadow: 0px -3px 2px 0px rgb(180, 87, 16);
       }
