@@ -78,11 +78,7 @@ window.onload = () => {
   document.getElementById("Button1").addEventListener('click', function() {location.href = 'index.html'}, false);
 
 // In Industry Button
-  //document.getElementById('Button2').addEventListener('click', function() {location.href = 'OnCampus.html'}, false);
-  document.getElementById("Button2").onclick = function() {myF()};
-  function myF() {
-    window.open('campusAndIndustry.html', '_blank');
-  }
+  document.getElementById("Button2").addEventListener('click', function() {location.href = 'campusAndIndustry.html'}, false);
 
 // LinkedIn Button
   document.getElementById("Button3").addEventListener("click", toLinkedIn);
