@@ -1,7 +1,5 @@
-// https://www.w3docs.com/snippets/javascript/how-to-redirect-mobile-devices-with-javascript-and-css.html
-
 window.onload = () => {
-
+/*
 if (typeof window.orientation !== "undefined") {
   // this means the user is on a mobile device, so they need to be redirected to the mobile version of the site
   window.location.replace("mobileIndex.html");
