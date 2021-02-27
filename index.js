@@ -82,7 +82,7 @@ if (screen.width <= 699) {
   document.getElementById("Button3").addEventListener("click", toLinkedIn);
 
     function toLinkedIn() {
-      window.open('https://www.linkedin.com/in/lucas-lasher-21011914a/', '_blank');
+      window.open('https://www.linkedin.com/in/lucas-lasher-21011914a/');
     }
 
 // Contact Button
