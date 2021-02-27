@@ -69,21 +69,12 @@ if (screen.width <= 699) {
     document.getElementById('vertSecretMessage').style.opacity = 0;
     document.getElementById('suitSecretMessage').style.opacity = 0;
   }
-  /*  function isIE() {
-      return document.documentMode;
-    }
-
-    if (isIE()) {
-      alert("Internet Explorer");
-    } else {
-      alert("Not Internet Explorer");
-    } */
-
+  
 // On Campus Button
   document.getElementById("Button1").addEventListener('click', function() {location.href = 'index.html'}, false);
 
 // In Industry Button
-  //document.getElementById('Button2').addEventListener('click', function() {location.href = 'OnCampus.html'}, false);
+  //document.getElementById('Button2').addEventListener('click', function() {location.href = 'campusAndIndustry.html'}, false);
   document.getElementById("Button2").onclick = function() {myF()};
   function myF() {
     window.open('campusAndIndustry.html', '_blank');
