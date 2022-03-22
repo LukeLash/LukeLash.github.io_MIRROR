@@ -8,7 +8,7 @@ window.onload = () => {
 
   document.getElementById("icon").addEventListener("click", openResume);
     function openResume() {
-      window.open("Lucas Lasher Resume.pdf");
+      window.open("Lucas Lasher Resume_.pdf");
     }
     // On Campus Button
       document.getElementById('Button1').addEventListener('click', function() {location.href = 'index.html'}, false);
